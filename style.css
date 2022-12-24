@@ -6,3 +6,28 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(#a2000a, #cf0000);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: url(images/tree.png);
+  z-index: 1;
+}

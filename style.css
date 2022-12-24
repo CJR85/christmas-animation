@@ -88,7 +88,12 @@ body {
   margin: 0 1vw;
   box-shadow: -100px 20px 5px #fff, 100px 20px 10px #fff;
   animation: animateSnow 15s linear infinite;
-  animation-delay: calc(75s / var(--i));
+  animation-duration: calc(75s / var(--i));
+}
+
+.container .snow span:nth-child(even) {
+  min-width: 10px;
+  height: 10px;
 }
 @keyframes animateSnow {
   0% {

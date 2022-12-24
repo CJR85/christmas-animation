@@ -62,3 +62,14 @@ body {
     transform: translateY(25px);
   }
 }
+
+.container .circle::after {
+  content: 'Happy Christmas';
+  position: absolute;
+  inset: -125px -200px;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
+}

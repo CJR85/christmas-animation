@@ -31,3 +31,24 @@ body {
   background: url(images/tree.png);
   z-index: 1;
 }
+
+.container .circle {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  height: 350px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.container .circle::before {
+  content: '';
+  position: absolute;
+  inset: -200px;
+  background: url(images/santa.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 600px;
+}
